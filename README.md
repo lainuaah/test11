@@ -9,10 +9,10 @@
   - [Instance Method](#instance-method)
     - [self](#self)
   - [Method overloading](#method-overloading)
-    - [Ví dụ:](#ví-dụ)
+    - [Ví dụ](#ví-dụ)
   - [Class Method](#class-method)
     - [Syntax](#syntax)
-    - [Ví dụ:](#ví-dụ-1)
+    - [Ví dụ](#ví-dụ-1)
   - [Static methods](#static-methods)
     - [Syntax](#syntax-1)
     - [Ví dụ](#ví-dụ-2)
@@ -234,7 +234,7 @@ Không như các ngôn ngữ lập trình khác, methods **không thể** explic
 ![](overloading.png)
 
 
-### Ví dụ:
+### Ví dụ
 ```python
 class Employee:
     # defining the properties and assigning them None to the
@@ -353,7 +353,7 @@ e = 5
 
 > `Note`: Không như `instance methods` (methods), tất cả class methods phải có ít nhất 1 parameter, là `cls`.
 
-### Ví dụ:
+### Ví dụ
 ```python
 class Player:
     teamName = 'Manchester City'  # class variable

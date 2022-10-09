@@ -1,3 +1,28 @@
+- [Initializing Objects](#initializing-objects)
+- [Class và Instance Variables](#class-và-instance-variables)
+  - [Class variables](#class-variables)
+  - [Instance variables](#instance-variables)
+  - [Khai báo class variable và instance variable](#khai-báo-class-variable-và-instance-variable)
+  - [Ví dụ về sử dụng class variable `sai`](#ví-dụ-về-sử-dụng-class-variable-sai)
+  - [Một ví dụ khác về sử dụng class variables](#một-ví-dụ-khác-về-sử-dụng-class-variables)
+- [Methods trong một Class](#methods-trong-một-class)
+  - [Instance Method](#instance-method)
+    - [self](#self)
+  - [Method overloading](#method-overloading)
+    - [Ví dụ:](#ví-dụ)
+  - [Class Method](#class-method)
+    - [Syntax](#syntax)
+    - [Ví dụ:](#ví-dụ-1)
+  - [Static methods](#static-methods)
+    - [Syntax](#syntax-1)
+    - [Ví dụ](#ví-dụ-2)
+- [Access Modifiers](#access-modifiers)
+  - [Public attributes](#public-attributes)
+    - [Ví dụ về public attributes](#ví-dụ-về-public-attributes)
+  - [Private attributes](#private-attributes)
+    - [Private properties](#private-properties)
+    - [Private methods](#private-methods)
+    - [Truy cập private attributes trong main code](#truy-cập-private-attributes-trong-main-code)
 # Initializing Objects
 Initializer được dùng để khởi tạo một object của một class. Initializer được gọi tự động khi một object của class được tạo. Đây là một method đặc biệt giúp chúng ta xác định và gán giá trị cho các instance variables.
 
@@ -209,7 +234,7 @@ Không như các ngôn ngữ lập trình khác, methods **không thể** explic
 ![](overloading.png)
 
 
-## Ví dụ:
+### Ví dụ:
 ```python
 class Employee:
     # defining the properties and assigning them None to the
@@ -328,7 +353,7 @@ e = 5
 
 > `Note`: Không như `instance methods` (methods), tất cả class methods phải có ít nhất 1 parameter, là `cls`.
 
-## Ví dụ:
+### Ví dụ:
 ```python
 class Player:
     teamName = 'Manchester City'  # class variable
@@ -363,7 +388,7 @@ Static method là method được dùng chỉ giới hạn ở phạm vi class. 
 Static methods không biết bất cứ thứ gì về state của class, ví dụ nó không thể chỉnh sửa các thuộc tính của class.
 Chúng ta có thể truyền bao nhiêu tham số cũng được vào static method này để thực hiện bất kỳ hàm nào mà không can thiệp vào **instance** hoặc **class variable**. Cứ coi nó như một utility function .
 
-## Ví dụ
+### Ví dụ
 ```python
 class Player:
     teamName = 'Manchester City'  # class variables
@@ -502,7 +527,7 @@ Tương tự như trên, `__displayID` là *private* method, không thể truy c
 
 > `Note`: Methods thường là public
 
-## Truy cập private attributes trong main code
+### Truy cập private attributes trong main code
 Nếu cảm thấy thật sự cần thiết truy cập *private* property hoặc method, chúng ta có thể sử dụng `_<ClassName>` prefix để truy cập, ví dụ như:
 ```python
 class Employee:
